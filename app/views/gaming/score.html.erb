@@ -1,0 +1,9 @@
+<p>Your grid was <%= @grid %></p>
+<p>Your guess is <%= @attempt %></p>
+
+<p><%= @result[:message] %></p>
+<p>It took you <%= @result[:time] %></p>
+<p>Start Time <%= @start_time %></p>
+<p>You score <%= @result[:score] %></p>
+
+<%= link_to "play again", '/game' %>

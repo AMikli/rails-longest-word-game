@@ -1,0 +1,14 @@
+<h1>Welcome to des chiffres et des lettres</h1>
+<%= link_to "Demo", "https://www.youtube.com/watch?v=fAPhLVhs12w", target:"_blank" %>
+
+<h2>Your Grid</h2>
+<%= @grid %>
+
+<h2>Your guess</h2>
+<form action="/score">
+  <input type="hidden" name="grid" value="<%= @grid %>">
+  <input type="hidden" name="start_time" value="<%= @start_time %>">
+  <input type="text" name="guess" placeholder="your guess">
+  <input type="submit" class = "btn">
+</form>
+
